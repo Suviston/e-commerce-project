@@ -1,0 +1,13 @@
+.card{
+    height: 80vh;
+    margin: 20px;
+    padding: 25px;
+}
+ 
+
+h4,h6{
+    font-weight: 400;
+}
+.card button{
+    left: 1000%;
+}

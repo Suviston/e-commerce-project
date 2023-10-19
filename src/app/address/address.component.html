@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="card">
+        <h5 class="card-title"> orders Info</h5>
+    
+<form [formGroup]="myordersForm" (ngSubmit)="orders()">  
+
+ <div class="col-md-4"> 
+  <label for="validationCustom01" class="form-label">Father Name</label>
+  <input formControlName="fathername" type="text" class="form-control"  placeholder="Father Name"    id="validationCustom01"  required>
+  <span class="text-danger" *ngIf="myordersForm.controls['fathername'].dirty && myordersForm.hasError('required','fathername')">*FatherName is required</span> 
+  <div class="valid-feedback">
+    Looks good!
+  </div>
+</div> 
+
+<div class="col-md-6">
+  <label for="validationCustom02" class="form-label">Address</label>
+  <input  formControlName="address" type="text" class="form-control"  placeholder="Enter  Address"  id="validationCustom02" required>
+  <span class="text-danger" *ngIf="myordersForm.controls['address'].dirty && myordersForm.hasError('required','address')">*Address is required</span> 
+  <div class="invalid-feedback">
+    Please provide a valid address.
+  </div>
+</div>
+<div class="col-md-4">
+  <label for="validationCustomaddress" class="form-label">city</label>
+  <div class="input-group has-validation">
+    <input     formControlName="city" type="text" class="form-control"  placeholder="Enter city"  id="validationCustom03" required>
+    <span class="text-danger" *ngIf="myordersForm.controls['city'].dirty && myordersForm.hasError('required','city')">*City is required</span> 
+    <div class="invalid-feedback">
+      Please choose your city.
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <label for="validationCustom04" class="form-label">State</label>
+  <input formControlName="state" type="text" class="form-control"  placeholder="Enter  state "id="validationCustom04" required>
+  <span class="text-danger" *ngIf="myordersForm.controls['state'].dirty && myordersForm.hasError('required','state')">*State is required</span> 
+    <option selected value=""></option>
+    
+
+
+   
+  
+  <div class="invalid-feedback">
+    Please select a valid state.
+  </div>
+</div>
+<div class="col-md-3">
+  <label for="validationCustom05" class="form-label">mobile</label>
+  <input formControlName="mobile" type="number" class="form-control" placeholder="mobile number" id="validationCustom05" required>
+  <span class="text-danger" *ngIf="myordersForm.controls['number'].dirty && myordersForm.hasError('required','number')">*mobile number is required</span> 
+  <div class="invalid-feedback">
+    Please provide a valid Number
+  </div>
+</div>
+  <br>
+<div class="col-12">
+   <button  [disabled]="!myordersForm.valid" class="btn btn-warning" type="submit">Submit </button> 
+</div>
+</form> 
+</div>
+
+</div>

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.firstpage{
+    width:100%;
+    height: 100vh;
+    background-clip: border-box;
+
+    background-image:url("/assets/firstpage.jpg") ;
+   background-size: cover;
+   
+   
+}
+.firstpage .explore{
+    margin-left: 60rem;
+    padding-top: 300px;
+    
+    width: 40%;
+
+}
+
+
+/* .firstpage{
+    width: 100%;
+    height: 100vh;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+.firstpage h2{
+    font-weight: 600;
+    padding: 20px;
+    font-size: 3rem;
+
+}
+.firstpage button{
+    width: 4cm;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+}
+.firstpage button:hover {
+    cursor: pointer;
+    background-color: red;
+    border-style: dashed;
+} 
+
+    

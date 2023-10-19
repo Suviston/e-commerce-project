@@ -1,0 +1,251 @@
+<!-- <section id="header">
+    <h3><i class="fa-brands fa-shopify"></i>shopify</h3>
+    <div>
+        <ul id="navbar">
+            <li><a  routerLink="/home"> home</a></li>
+            <li><a  routerLink="shopnow" > shop</a></li>
+            <li><a routerLink ="/cart" > cart</a></li>
+             - <li><a routerLink="contact" >contact</a></li>
+            <li><a routerLink="" ><i class="fa fa-bag-shopping"></i></a></li>   -->
+            <!-- <a routerLink="" id="close"><i class="fas fa-times"></i></a> -->
+        <!-- </ul> -->
+    <!-- </div> -->
+      <!-- <div id="mobile">
+      <i id="bar" class="fas fa-outdent"></i> -->
+
+    <!-- </div>   -->
+
+<!-- </section>  -->
+
+<!-- 
+<header>
+  <div class="navbar  shadow-sm">
+         
+              
+          
+      <div   class="navbar-brand align-it em-center d-flex">
+          
+          <strong  style="font-size: 30px;"><i class="fa-brands fa-shopify"></i>shopify</strong>
+             <div class="form group">
+             <input type="text" class="form-control" placeholder="search product,brands and more">
+
+          </div>
+          
+          <[(ngModel)]="searchTerm"(keyup)="search($event)"  -->
+           
+      <!-- </div>
+
+ 
+       <h3><a routerLink="/home"   style="font-size: 20px;"> home</a></h3>
+
+       <h3><a  routerLink="/shopnow" style="font-size: 20px;" >shop</a></h3>  
+     
+       <h3><a  routerLink="/login"  style="font-size: 20px;" >login</a></h3>
+   
+      
+          
+       <h3><a  style="font-size: 20px;" routerLink="/cart" >
+      
+      <i class="fas fa-cart-plus"> </i>
+     <div style="font-size: 20px;"class="badge bg-danger"> {{totalItem}}</div>
+        
+     </a> </h3>&nbsp; 
+         
+       -->
+      
+      
+      
+   <!-- </div> --> 
+
+
+
+
+<section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>super value deals</h2>
+    <h1>on all products</h1>
+    <p>save more with coupans & up to 70% off!</p>
+    <button>Shop Now</button>
+
+</section>
+
+<section id="feature" class="section-p1">
+
+    
+        
+          <!-- <div class="row row-cols-1 row-cols-md-3 g-4">  -->
+           <!-- <div class="row"> -->
+              <div class="card">
+                <img src="/assets/shipping4.png" class="card-img-top" alt="...">
+                <h6 style=" background-color:rgb(11, 182, 33);">Free Shipping</h6>
+                
+              </div>
+            <!-- </div>   -->
+            <!-- <div class="row">  -->
+              <div class="card">
+                <img src="/assets/online shopping png.jfif" class="card-img-top" alt="...">
+                <h6 style=" background-color: purple;">Online Order</h6>
+                
+              </div>
+            <!-- </div>  -->
+             <!-- <div class="row">  -->
+              <div class="card">
+                <img src="/assets/save money.png" class="card-img-top" alt="...">
+                <h6 style=" background-color:rgb(101, 178, 214);">Save Money</h6>
+                
+              </div>
+              <!-- <div class="card">
+                <img src="/assets/save money.png" class="card-img-top" alt="...">
+                <h6 style=" background-color:rgb(101, 178, 214);">Save Money</h6>
+                
+              </div> -->
+             <!-- </div>   -->
+            <!-- <div class="row"> -->
+              <div class="card">
+                <img src="/assets/promotion.png" class="card-img-top" alt="...">
+                <h6 style=" background-color:rgb(15, 199, 159);">Promotions</h6>
+                
+              </div>
+            <!-- </div>  -->
+            <!-- <div class="row"> -->
+              <div class="card">
+                <img src="/assets/supportive.png" class="card-img-top" alt="...">
+                <h6 style=" background-color:rgba(14, 160, 197, 0.753);"  > F24/7 support</h6>
+                
+              </div>
+            <!-- </div>  -->
+            
+
+
+
+
+            
+  <!-- </div>   -->
+</section> 
+
+<section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro" *ngFor="let item of trendyProduct ">
+      <img src="{{item.image}}" alt="">
+      <div class="des">
+        <!-- | filter:'shirt':'name' -->
+        <h5> {{item.brand}}</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+        </div>
+         <span>&#8377;{{item.price}}</span>
+       
+      </div>
+     
+      <a (click)="addtocart(item)" ><i class="fa-solid fa-cart-arrow-down"></i></a> 
+    </div>
+    </div>
+  
+
+</section>
+
+    
+
+  <section id="banner" class="section-m1 ">
+  
+
+  <h4>Repair Services</h4>
+  <h2>up to <span> 70% off </span> shirts||Shoes || All Products</h2>
+
+
+ </section> 
+
+
+ <h2>New Arrivals</h2>
+ <p>Summer Collection New Modern Design</p>
+
+
+ <section id="sm-banner" class="section-p1">
+   <div class="banner-box">
+    <h4>Mens Wear</h4>
+    <h5> 25%  Offer</h5>
+    <span>The Best Classic Dress is on sale at cara</span>
+    <button routerLink="/menswear"  class="white"> Show More</button>
+
+   </div>
+   <div class="banner-box banner-box2">
+    <h4>Womens wear</h4>
+    <span> 10% Offer all the items</span>
+    <button routerLink="/womenswear"  class="white"> Show More</button>
+
+   </div>
+   </section>
+
+   <section id="banner-3">
+    <div class="banner-box ">
+      <h4>Branded shoes</h4>
+      <h2 > 25%  Offer</h2>
+    
+      <button  routerLink="/shoes"  class="white"> Show More</button>
+  
+     </div>
+     <div class="banner-box banner-box2">
+      <h4> Sports Products</h4>
+      <span></span>
+      <button  routerLink="/sports"   class="white"> Show More</button>
+  
+     </div>
+     <div class="banner-box banner-box3">
+      <h4>Branded Watches </h4>
+     
+      <button routerLink="/watches" class="white"> Show More</button>
+  
+     </div>
+
+
+   </section>
+
+ <!-- <section id="newsletter" class="section-p1"class="section-m1 " >
+  <div class="newstext">
+    <h4>Sign Up For Newsletter</h4>
+    <p>GEt E-mail updates about our latest shop and <span>special offers.</span></p>
+
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your E-mail Address">
+    <button r class="normal">Sign Up</button>
+  </div>
+
+ </section>
+
+
+<footer  class="section-p1">
+  <div class="col">
+    <h3><i class="fa-brands fa-shopify"></i>shopify</h3>
+    <h4>Contact:-</h4>
+    <p><strong>Address:</strong> </p>
+    <p><strong>Phone:</strong> +918220203128</p>
+    <p><strong>Hours:</strong>10:00- 18:00, Mon-Sat</p>
+    <div class="follow">
+      <h4>Follow Us:</h4>
+    </div>
+    
+    <div class="icon">
+      
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+ -->

@@ -1,0 +1,40 @@
+
+
+
+
+<section id="product1" class="section-p1">
+
+  <div class="pro-container">
+    <div class="pro" *ngFor="let item of sportsProduct">
+      <img src="{{item.image}}" alt="">
+      <div class="des">
+        
+        <h5> {{item.brand}}</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+        </div>
+         <span>&#8377; {{item.price}}</span>
+       
+      </div>
+       <div class="cart">
+      <a  (click)="addtocart(item)"><i class="fa-solid fa-cart-arrow-down"></i></a>
+    </div>
+    </div>
+    
+</div> 
+</section>
+
+ 
+
+
+
+
+
+          
+        
+  

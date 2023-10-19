@@ -1,0 +1,60 @@
+<body>
+    
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1 style="color:black">Sign Up</h1>
+                    <h6  >Register yourself!!</h6>
+
+                </div>
+
+                
+                   
+                <form >
+                    <form [formGroup]="signForm" (ngSubmit)="signUp()">
+                        <div class="mb-3">
+                            <!-- <img src="/assets/login-page.jpg" alt=""> -->
+                        
+                                <label for="exampleInputPassword1" class="form-label">Full Name</label>
+                                <input formControlName="fullname" type="text" class="form-control" placeholder="Enter Full Name" id="exampleInputPassword1">
+                                 <span class="text-danger" *ngIf="signForm .controls['fullname'].dirty && signForm.hasError('required','fullname')">*FullName is required</span> 
+                            </div>
+
+                                <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                                <input formControlName="mobile" type="number" class="form-control" placeholder="Enter Mobile Number"id="exampleInputPassword1">
+                                <span class="text-danger" *ngIf= "signForm.controls['mobile'].dirty && signForm.hasError('required','mobile')">* Mobile Number is required</span>
+                            </div>
+                              <div class="mb-3"> 
+                          <label for="exampleInputEmail1"  class="form-label">Email address</label>
+                          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"placeholder="Enter Email" aria-describedby="emailHelp">
+                          <span class="text-danger" *ngIf="signForm .controls['email'].dirty && signForm.hasError('required','email')">*Email Id is required</span>
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" placeholder="Enter password"id="exampleInputPassword1">
+                           <span class="text-danger" *ngIf="signForm.controls['email'].dirty && signForm.hasError('required','email')">*password is required</span> 
+                        </div>
+                         
+                        <button type="submit" [disabled]="!signForm.valid "    class="btn btn-warning"  style="align-items: center;"  >Submit</button>
+                        <br><a routerLink="/login" style="color:black;"> Alredy Registered? Click to login!!</a>
+                    
+                    </form>
+                       
+                 </form>
+               </div>
+            </div>
+        </div>
+    </div>
+ 
+
+</body>
+
+
+
+
